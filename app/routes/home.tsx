@@ -1,5 +1,11 @@
+import Hero from "~/components/hero";
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import BreakFast from "./recipeCategories/breakFast";
+import Header from "~/components/header";
+import Lunch from "./recipeCategories/lunch";
+import Dinner from "./recipeCategories/dinner";
+import Footer from "~/components/footer";
+
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +15,12 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (<div>
+    <Header />
+    <Hero/>
+    <BreakFast/>
+    <Lunch/>
+    <Dinner/>
+    <Footer/>
+  </div>);
 }
