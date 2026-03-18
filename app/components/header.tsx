@@ -18,7 +18,7 @@ const Header = () => {
             to="/allRecipes"
             className="text-lg font-medium text-white transition hover:text-yellow-300"
           >
-           
+            All Recipes
           </Link>
 
           
